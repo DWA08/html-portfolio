@@ -1,41 +1,64 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angela's Portfolio</title>
+    <title>Dilip's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Angela Yu's Portfolio</h1>
-    <h1>I'm a Web developer</h1>
-    <hr />
-   <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-   <img src="./assets/images/movie-ranking.png" height="400" alt="movie ranking"/>
-   <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-   <img src="./assets/images/birthday-invite.png" height="300" alt="Birthday Invitation"/>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="skills.html">Skills</a></li> <!-- Links to the skills page -->
+                <li><a href="portfolio.html">Portfolio</a></li> <!-- Links to the portfolio page -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-   <a href="./public/about.html">About Me</a>
-   <a href="./public/contact.html">Contact Me</a>
+    <section id="home">
+        <div class="intro">
+            <h1>Hey there!, It's Me</h1>
+            <h2>I'm <span class="highlight">Dilip William Andrews</span></h2>
+            <p>Passionate B.Tech student in EEE, Tech-Fanatic, football enthusiast, and book lover.</p>
+            <div class="social-icons">
+                <a href="https://github.com/DWA08"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dilip-william-andrews-529a8a249/"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="profile-picture">
+            <img src="./profile.png" alt="Dilip William Andrews">
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A dynamic B.Tech student in Electrical and Electronics Engineering, I thrive on pushing the boundaries of knowledge
+            and skills across diverse fields. With a naturally upbeat demeanor, I excel in fostering robust collaborative relationships
+            while steadfastly pursuing goals with precision. I approach every opportunity with unwavering dedication and boundless
+            enthusiasm, driven to explore new horizons and deliver effective contributions.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email or phone, or connect with me on LinkedIn.</p>
+        <ul>
+            <li>Email: <a href="mailto:dilpandrews08@gmail.com">dilpandrews08@gmail.com</a></li>
+            <li>Phone: <a href="tel:+916361827602">+91 63618 27602</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/dilip-william-andrews-529a8a249/" target="_blank">Dilip William Andrews</a></li>
+        </ul>
+    </section>
     
-
-
-    
+    <footer>
+        <p>© 2024 DilipWA</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
